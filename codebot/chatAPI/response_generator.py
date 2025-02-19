@@ -1,8 +1,8 @@
 import json
 import requests
-from django.conf import settings
+from codebot.settings import TALKBOT_API_KEY
 
-API_KEY = settings.TALKBOT_API_KEY
+API_KEY = TALKBOT_API_KEY
 URL = "https://api.talkbot.ir/v1/chat/completions"
 
 def get_model_response(prompt, model="gpt-4-turbo"):

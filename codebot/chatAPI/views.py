@@ -5,7 +5,6 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .models import APIRequest, APIResponse
-from .serializers import APIRequestSerializer, APIResponseSerializer
 from .prompts_engineering import generate_prompt
 from .response_generator import get_model_response
 from .cleaner_response_engine import clean_response
@@ -68,7 +67,7 @@ def chat_request(request):
     )
 
     prompt = generate_prompt(user_input)
-    model_names = ["gpt-4-turbo", "deepseek-coder", "claude-3.5-sonnet"]
+    model_names = ["claude-3-5-sonnet-20240620", "gpt-4o-mini-2024-07-18", "deepseek-coder",]
     raw_responses = []
 
     for m in model_names:
