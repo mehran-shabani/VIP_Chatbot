@@ -2,3 +2,12 @@
 /migrations
 /static
 *.pyc
+*.env
+*.log
+*.db
+/.vscode
+/.idea
+/.vs
+.env
+env/
+__pycache__/
