@@ -1,0 +1,4 @@
+*.sqlite3
+/migrations
+/static
+*.pyc
